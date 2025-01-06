@@ -10,6 +10,7 @@ const RSVP = () => {
     surname: "",
     email: "",
     isComing: "yes",
+    address: "",
     bringingSomeone: "no",
     plusOneName: "",
     needCar: "no",
@@ -124,6 +125,23 @@ const RSVP = () => {
                 <option value="no">No</option>
               </select>
             </div>
+
+            {/* Address? */}
+            {formData.isComing === "yes" && (
+              <div>
+                <label className="block text-gray-700 font-medium mb-1">
+                  Indirizzo (Ci serve per mandarvi l'invito)
+                </label>
+                <input
+                  type="text"
+                  name="address"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="es: Via Tal dei tali, n.58"
+                  value={formData.address}
+                  onChange={handleChange}
+                />
+              </div>
+            )}
 
             {/* Bringing Someone? */}
             {formData.isComing === "yes" && (
