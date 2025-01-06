@@ -3,7 +3,7 @@ import React from "react";
 const Contacts = () => {
     return (
         <div className="">
-            <div className="max-w-5xl mx-auto px-6 md:flex-row items-center joinus">
+            <div className="max-w-5xl mx-auto px-6 md:flex-row items-center joinus pt-6">
                 <h1 className="corinthia-bold text-7xl md:text-7xl font-serif text-rose-600 newRose mb-4">
                     Non esitare a contattarci per qualsiasi info!
                 </h1>

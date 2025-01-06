@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
+import TopBar from "../components/TopBar";
 
 const Home = () => {
     const navigate = useNavigate(); // Initialize the navigate function
@@ -10,6 +11,7 @@ const Home = () => {
 
     return (
 <div className="">
+    <TopBar/>
     <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center saveDate">
       {/* Left Section: Text */}
       <div className="flex-1 text-center md:text-left">
@@ -53,7 +55,7 @@ const Home = () => {
     </div>
 
     {/* church event description */}
-    <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center">
+    <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center pt-3">
         <div className="flex-1 text-center md:text-center">
             <h1 className="corinthia-bold text-7xl md:text-7xl font-serif text-rose-600 newRose mb-4">
                 Appuntamento
@@ -88,7 +90,7 @@ const Home = () => {
     </div>
 
     {/* venue description section */}
-    <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center">
+    <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center pt-3 pb-6">
         <div className="flex-1 text-center md:text-center">
             <h1 className="corinthia-bold text-7xl md:text-7xl font-serif text-rose-600 newRose mb-4">
                 Gli Sposi
