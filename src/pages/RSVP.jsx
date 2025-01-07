@@ -28,7 +28,7 @@ const RSVP = () => {
 
     try {
       const response = await axios.post("https://wedbackend-production.up.railway.app/submit", formData);
-      navigate("/"); // Replace "/" with your main page route
+      navigate("/it"); // Replace "/" with your main page route
     } catch (error) {
       console.error("Failed to submit form:", error);
       alert("Failed to submit the form.");
@@ -39,21 +39,20 @@ const RSVP = () => {
     <div className="">
       <div className="max-w-5xl mx-auto px-6 md:flex-row items-center joinus pt-6">
         <h1 className="corinthia-bold text-7xl md:text-7xl font-serif text-rose-600 newRose mb-4">
-          Will you join us?
+          Sarai dei nostri?
         </h1>
         <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
-          Per confermare la vostra presenza alle nozze vi basterà compilare il
-          form sottostante. Vi preghiamo di compilare il form anche qualora non
-          possiate raggiungerci a questo evento. Questo ci aiuterebbe
-          nell'organizzazione.
+        Per confermare la vostra presenza alle nozze, vi invitiamo gentilmente a compilare il form sottostante. 
+        Anche se non potrete essere presenti, 
+        vi preghiamo di segnalarcelo tramite il form: ci aiuterà moltissimo nell’organizzazione.
         </p>
         <h2 className="corinthia-bold text-5xl md:text-5xl font-serif text-rose-600 newRose mb-4">
-          You are the party
+          La festa.. siete voi!
         </h2>
         <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
-          Un party senza di voi non sarebbe un gran successo.. per questo
-          vorremmo provare a raccogliere le vostre esigenze/necessità. Fateci
-          sapere!
+        Una festa senza di voi non sarebbe la stessa! 
+        Per questo vorremmo conoscere meglio le vostre esigenze o necessità. 
+        Fatecelo sapere!
         </p>
 
         <div className="flex items-center justify-center">
@@ -64,13 +63,13 @@ const RSVP = () => {
             {/* Name Input */}
             <div>
               <label className="block text-gray-700 font-medium mb-1">
-                Name
+                Nome
               </label>
               <input
                 type="text"
                 name="name"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Enter your first name"
+                placeholder="Inserisci il tuo nome"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -80,13 +79,13 @@ const RSVP = () => {
             {/* Surname Input */}
             <div>
               <label className="block text-gray-700 font-medium mb-1">
-                Surname
+                Cognome
               </label>
               <input
                 type="text"
                 name="surname"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Enter your surname"
+                placeholder="Inserisci il tuo cognome"
                 value={formData.surname}
                 onChange={handleChange}
                 required
@@ -102,7 +101,7 @@ const RSVP = () => {
                 type="email"
                 name="email"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Enter your email"
+                placeholder="Inserisci la tua email"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -121,7 +120,7 @@ const RSVP = () => {
                 onChange={handleChange}
                 required
               >
-                <option value="yes">Yes</option>
+                <option value="yes">Si</option>
                 <option value="no">No</option>
               </select>
             </div>
@@ -156,7 +155,7 @@ const RSVP = () => {
                   onChange={handleChange}
                 >
                   <option value="no">No</option>
-                  <option value="yes">Yes</option>
+                  <option value="yes">Si</option>
                 </select>
               </div>
             )}
@@ -166,11 +165,10 @@ const RSVP = () => {
                 <label className="block text-gray-700 font-medium mb-1">
                   Con chi verrai?
                 </label>
-                <input
-                  type="text"
+                <textarea
                   name="plusOneName"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  placeholder="Name of your plus one"
+                  placeholder="Indicaci con chi verrai"
                   value={formData.plusOneName}
                   onChange={handleChange}
                 />
@@ -190,7 +188,7 @@ const RSVP = () => {
                   onChange={handleChange}
                 >
                   <option value="no">No</option>
-                  <option value="yes">Yes</option>
+                  <option value="yes">Si</option>
                 </select>
               </div>
             )}
@@ -203,7 +201,7 @@ const RSVP = () => {
                 <textarea
                   name="notes"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  placeholder="Write your notes here"
+                  placeholder="Scrivi qui le informazioni aggiuntive"
                   value={formData.notes}
                   onChange={handleChange}
                 />
@@ -215,7 +213,7 @@ const RSVP = () => {
               type="submit"
               className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
             >
-              Yes! Count me in!
+              Ci sarò!
             </button>
           </form>
         </div>
