@@ -138,3 +138,15 @@ button:focus-visible {
 .formCustom {
   text-align: left;
 }
+
+/* BUTTONS */
+.mybtn:hover {
+  background-color: rgb(112, 89, 83) !important;
+  border-color: rgb(112, 89, 83);
+  color: rgb(253 250 244) !important;
+}
+
+/* LINKS */
+.mylink:hover {
+  color: rgb(112, 89, 83) !important;
+}

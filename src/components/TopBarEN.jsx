@@ -26,24 +26,24 @@ const TopBar = () => {
             {/* Navigation Links */}
             <div className="space-x-6 flex items-center">
               <NavLink
-                to="/it/rsvp"
+                to="/en/rsvp"
                 className={({ isActive }) =>
                   isActive
                     ? "mylink newBrown font-bold"
                     : "mylink newRose transition duration-200"
                 }
               >
-                Conferma!
+                RSVP
               </NavLink>
               <NavLink
-                to="/it/contacts"
+                to="/en/contacts"
                 className={({ isActive }) =>
                   isActive
                     ? "mylink newBrown font-bold"
                     : "mylink newRose transition duration-200"
                 }
               >
-                Contatti
+                Contacts
               </NavLink>
             </div>
           </div>

@@ -1,17 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
-import TopBar from "../components/TopBar";
+import TopBarEN from "../components/TopBarEN";
 
 const Home = () => {
     const navigate = useNavigate(); // Initialize the navigate function
 
     const handleRSVPClick = () => {
-        navigate("/it/RSVP"); // Redirect to the /RSVP page
+        navigate("/en/RSVP"); // Redirect to the /RSVP page
     };
 
     return (
 <div className="">
-    <TopBar/>
+    <TopBarEN/>
     <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center saveDate">
       {/* Left Section: Text */}
       <div className="flex-1 text-center md:text-left">
@@ -22,12 +22,12 @@ const Home = () => {
           Claudia & Piero
         </h1>
         <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
-          1 Settembre 2025 - Matera
+          September 1st, 2025 - Matera
         </p>
         <button 
             onClick={handleRSVPClick}
             className="mybtn poiret-one-regular px-6 py-3 border border-gray-500 text-gray-800 newBrown hover:bg-gray-100 rounded-lg transition-all duration-200">
-          CONFERMA LA TUA PRESENZA
+          RSVP
         </button>
       </div>
 
@@ -58,10 +58,11 @@ const Home = () => {
     <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center pt-3">
         <div className="flex-1 text-center md:text-center">
             <h1 className="corinthia-bold text-7xl md:text-7xl font-serif text-rose-600 newRose mb-4">
-                Appuntamento
+                The Celebration
             </h1>
             <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
-                Chiesa dei Santi Pietro e Paolo
+                We warmly invite you to join us for the wedding at: <br />
+                <span className="bg">Saints Pieter and Paul Church</span>
             </p>
             <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
                 <a className="underline" href="https://www.google.com/maps/place/Chiesa+di+San+Pietro+Caveoso/@40.6644541,16.6098318,17z/data=!3m1!4b1!4m6!3m5!1s0x13477f0d97abb65f:0x1ab1e1853c9332f9!8m2!3d40.6644541!4d16.6124067!16s%2Fg%2F120j3mh3?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
@@ -69,11 +70,10 @@ const Home = () => {
                 </a>
             </p>
             <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
-                Ore 10:30
+                The ceremony will commence at <span className="font-bold">10:30 a.m</span>
             </p>
-            <p>-----------</p>
             <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
-                Dalle ore 10:00 sarà attivo un servizio navette con partenza dal parcheggio auto di Via G. Saragat - Matera.
+            For your convenience, a shuttle service will operate from 10:00 a.m. onwards, departing from the parking area at Via G. Saragat, Matera.
             </p>
         </div>
     </div>
@@ -93,27 +93,25 @@ const Home = () => {
     <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center pt-3 pb-6">
         <div className="flex-1 text-center md:text-center">
             <h1 className="corinthia-bold text-7xl md:text-7xl font-serif text-rose-600 newRose mb-4">
-                Gli Sposi
+                The Reception
             </h1>
             <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
-                dopo la cerimonia saranno felici di festeggiare con Voi presso
-                la Tenuta Visconti,<br />
+                Following the ceremony, we will be delighted to celebrate this joyous occasion with you at:<br />
                 <a className="underline" href="https://www.google.com/maps/place/Tenuta+Visconti+Dimora+Storica/@40.3452478,16.7303349,17z/data=!4m6!3m5!1s0x134742ce92c6be03:0x390b4381b14660eb!8m2!3d40.3478088!4d16.7308788!16s%2Fg%2F1tj2f4y4?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
-                Contrada S. Teodoro, 75015 Pisticci MT
+                Tenuta Visconti - Contrada S. Teodoro, 75015 Pisticci MT
                 </a>
             </p>
             <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
-                Autobus GT saranno a disposizione degli invitati dal parcheggio auto di Via G. Saragat, Matera.
-                Gli stessi, provvederanno a riaccompagnare gli ospiti a Matera, dalla Tenuta, al termine della serata.
+                A shuttle service will be provided to transport guests from Via G. Saragat, Matera to the venue. After the festivities, the same shuttle will ensure everyone returns safely to Matera.
             </p>
             <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
-                E' gradita gentile conferma
+                We kindly ask that you confirm your attendance at your earliest convenience.
             </p>
 
             <button
                 onClick={handleRSVPClick} 
                 className="mybtn poiret-one-regular px-6 py-3 border border-gray-500 text-gray-800 newBrown hover:bg-gray-100 rounded-lg transition-all duration-200">
-            CONFERMA LA TUA PRESENZA
+            RSVP
             </button>
         </div>
     </div>
