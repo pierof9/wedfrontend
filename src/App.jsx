@@ -18,6 +18,9 @@ const App = () => {
         <Route path="/en/rsvp" element={<RSVPEN />} />
         <Route path="/it/contacts" element={<Contacts />} />
         <Route path="/en/contacts" element={<ContactsEN />} />
+
+        {/* Catch-all route for 404s */}
+        <Route path="*" element={<HomeEN />} />
       </Routes>
     </Router>
   );
