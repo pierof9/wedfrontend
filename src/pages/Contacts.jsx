@@ -13,7 +13,7 @@ const Contacts = () => {
                 {/* Piero's Column */}
                 <div className="bg-white shadow-lg rounded-lg p-6 text-center">
                 <img
-                    src="https://via.placeholder.com/150"
+                    src="/piero.jpeg"
                     alt="Piero"
                     className="w-32 h-32 mx-auto rounded-full mb-4"
                 />
@@ -31,7 +31,7 @@ const Contacts = () => {
                 {/* Claudia's Column */}
                 <div className="bg-white shadow-lg rounded-lg p-6 text-center">
                 <img
-                    src="https://via.placeholder.com/150"
+                    src="/noi.png"
                     alt="Claudia"
                     className="w-32 h-32 mx-auto rounded-full mb-4"
                 />
@@ -72,9 +72,9 @@ const Contacts = () => {
                 <div className="bg-white shadow-lg rounded-lg p-6">
                 <h2 className="corinthia-bold text-4xl font-serif text-rose-600 newRose mb-4">Appuntamento</h2>
                 <ul className="list-disc list-inside text-gray-700">
-                    <li>📜 <strong>Lunedì 1 Settembre 2025:</strong> ore 10:30</li>
-                    <li>💒 <strong>Reception:</strong> Chiesa dei Santi Pietro e Paolo (S. Pietro Caveoso).</li>
-                    <li>🚗 <strong>Parcheggio:</strong> Dalle ore 10:00 sarà attivo un servizio navette con partenza dal parcheggio auto di Via G. Saragat - Matera. 
+                    <li className="mb-4 simonetta-black text-2xl">📜 <strong>Lunedì 1 Settembre 2025:</strong> ore 10:30</li>
+                    <li className="mb-4 simonetta-black text-2xl">💒 <strong>Reception:</strong> Chiesa dei Santi Pietro e Paolo (S. Pietro Caveoso).</li>
+                    <li className="mb-4 simonetta-black text-2xl">🚗 <strong>Parcheggio:</strong> Dalle ore 10:00 sarà attivo un servizio navette con partenza dal parcheggio auto di Via G. Saragat - Matera. 
                     Le navette vi accompagneranno al piazzale della Chiesa, con frequenza regolare.</li>
                 </ul>
                 </div>
@@ -86,9 +86,9 @@ const Contacts = () => {
                 <div className="bg-white shadow-lg rounded-lg p-6">
                     <h2 className="corinthia-bold text-4xl font-serif text-rose-600 newRose mb-4">Appuntamento</h2>
                     <ul className="list-disc list-inside text-gray-700">
-                        <li>📜 <strong>Lunedì 1 Settembre 2025:</strong> ore 13:00</li>
-                        <li>💒 <strong>Reception:</strong> Tenuta Visconti (Pisticci, MT).</li>
-                        <li>🚗 <strong>Parcheggio:</strong> Autobus GT saranno a disposizione degli invitati dal parcheggio auto di Via G. Saragat, Matera.
+                        <li className="mb-4 simonetta-black text-2xl">📜 <strong>Lunedì 1 Settembre 2025:</strong> ore 13:00</li>
+                        <li className="mb-4 simonetta-black text-2xl">💒 <strong>Reception:</strong> Tenuta Visconti (Pisticci, MT).</li>
+                        <li className="mb-4 simonetta-black text-2xl">🚗 <strong>Parcheggio:</strong> Autobus GT saranno a disposizione degli invitati dal parcheggio auto di Via G. Saragat, Matera.
                         Gli stessi, provvederanno a riaccompagnare gli ospiti a Matera, dalla Tenuta, al termine della serata.</li>
                     </ul>
                 </div>

@@ -6,6 +6,7 @@ import HomeEN from "./pages/HomeEN";
 import RSVP from "./pages/RSVP";
 import RSVPEN from "./pages/RSVPEN";
 import Contacts from "./pages/Contacts";
+import ContactsEN from "./pages/ContactsEN";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/it/rsvp" element={<RSVP />} />
         <Route path="/en/rsvp" element={<RSVPEN />} />
         <Route path="/it/contacts" element={<Contacts />} />
+        <Route path="/en/contacts" element={<ContactsEN />} />
       </Routes>
     </Router>
   );
