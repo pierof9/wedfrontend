@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
       {/* Right Section: Image */}
-      <div className="flex-3 mt-8 md:mt-0 md:ml-12 flex justify-center">
+      <div className="flex-1 mt-8 md:mt-0 md:ml-12 flex justify-center">
         <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
           <img
             src="/noi.png"
