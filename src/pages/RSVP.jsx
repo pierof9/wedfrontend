@@ -27,8 +27,9 @@ const RSVP = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://wedbackend-production.up.railway.app/submit", formData);
-      navigate("/it"); // Replace "/" with your main page route
+      const response = await axios.post("http://localhost:3001/submit", formData);
+      // const response = await axios.post("https://wedbackend-production.up.railway.app/submit", formData);
+      navigate("/it", { state: { successMessage: "Grazie per la risposta! Riceverai presto una mail di conferma." } });
     } catch (error) {
       console.error("Failed to submit form:", error);
       alert("Failed to submit the form.");
@@ -213,7 +214,10 @@ const RSVP = () => {
               type="submit"
               className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
             >
-              Ci sarò!
+              {formData.isComing === "yes" ? (
+                <span>Ci sarò!</span>
+              ) : (<span>Temo di non poter partecipare :/</span>)
+              }
             </button>
           </form>
         </div>
