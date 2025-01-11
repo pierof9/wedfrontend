@@ -27,8 +27,8 @@ const RSVPEN = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3001/submit", formData);
-      // const response = await axios.post("https://wedbackend-production.up.railway.app/submit", formData);
+      // const response = await axios.post("http://localhost:3001/submit", formData);
+      const response = await axios.post("https://wedbackend-production.up.railway.app/submit", formData);
       navigate("/en", { state: { successMessage: "Grreat! Thanks for your reply!" } });
     } catch (error) {
       console.error("Failed to submit form:", error);
