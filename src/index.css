@@ -119,11 +119,13 @@ button:focus-visible {
 
 /* CUSTOM COLORS */
 .newRose {
-  color:rgb(219, 161, 145);
+  /* color:rgb(219, 161, 145);  */
+  color: #74826d;
 }
 
 .newBrown {
-  color: rgb(112, 89, 83);
+  /* color: rgb(112, 89, 83); */
+  color: #886d8c;
 }
 
 /* CUSTOM MAIN PAGE */

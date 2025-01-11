@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/en/contacts" element={<ContactsEN />} />
 
         {/* Catch-all route for 404s */}
-        <Route path="*" element={<HomeEN />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );

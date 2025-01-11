@@ -29,7 +29,7 @@ const RSVPEN = () => {
     try {
       const response = await axios.post("http://localhost:3001/submit", formData);
       // const response = await axios.post("https://wedbackend-production.up.railway.app/submit", formData);
-      navigate("/en", { state: { successMessage: "Thanks for your reply! You will receive a confirmation email, soon." } });
+      navigate("/en", { state: { successMessage: "Grreat! Thanks for your reply!" } });
     } catch (error) {
       console.error("Failed to submit form:", error);
       alert("Failed to submit the form.");
