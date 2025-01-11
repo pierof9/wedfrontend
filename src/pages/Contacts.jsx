@@ -31,7 +31,7 @@ const Contacts = () => {
                 {/* Claudia's Column */}
                 <div className="bg-white shadow-lg rounded-lg p-6 text-center">
                 <img
-                    src="/noi.png"
+                    src="/claudia.jpeg"
                     alt="Claudia"
                     className="w-32 h-32 mx-auto rounded-full mb-4"
                 />
