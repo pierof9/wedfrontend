@@ -13,7 +13,7 @@ const Contacts = () => {
                 {/* Piero's Column */}
                 <div className="bg-white shadow-lg rounded-lg p-6 text-center">
                 <img
-                    src="/piero.jpeg"
+                    src="/piero.png"
                     alt="Piero"
                     className="w-32 h-32 mx-auto rounded-full mb-4"
                 />
@@ -31,7 +31,7 @@ const Contacts = () => {
                 {/* Claudia's Column */}
                 <div className="bg-white shadow-lg rounded-lg p-6 text-center">
                 <img
-                    src="/claudia.jpeg"
+                    src="/claudia.png"
                     alt="Claudia"
                     className="w-32 h-32 mx-auto rounded-full mb-4"
                 />
