@@ -86,7 +86,7 @@ const Contacts = () => {
                 <div className="bg-white shadow-lg rounded-lg p-6">
                     <h2 className="corinthia-bold text-4xl font-serif text-rose-600 newRose mb-4">Appuntamento</h2>
                     <ul className="list-disc list-inside text-gray-700">
-                        <li className="mb-4 simonetta-black text-2xl">📜 <strong>Lunedì 1 Settembre 2025:</strong> ore 13:00</li>
+                        <li className="mb-4 simonetta-black text-2xl">📜 <strong>Lunedì 1 Settembre 2025:</strong> ore 13:30</li>
                         <li className="mb-4 simonetta-black text-2xl">💒 <strong>Reception:</strong> Tenuta Visconti (Pisticci, MT).</li>
                         <li className="mb-4 simonetta-black text-2xl">🚗 <strong>Parcheggio:</strong> Autobus GT saranno a disposizione degli invitati dal parcheggio auto di Via G. Saragat, Matera.
                         Gli stessi, provvederanno a riaccompagnare gli ospiti a Matera, dalla Tenuta, al termine della serata.</li>

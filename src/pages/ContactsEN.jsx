@@ -85,7 +85,7 @@ const ContactsEN = () => {
                 <div className="bg-white shadow-lg rounded-lg p-6">
                     <h2 className="corinthia-bold text-4xl font-serif text-rose-600 newRose mb-4">The Reception</h2>
                     <ul className="list-disc list-inside text-gray-700">
-                        <li className="mb-4 simonetta-black text-2xl">📜 <strong>September 1st, 2025:</strong> 1 pm</li>
+                        <li className="mb-4 simonetta-black text-2xl">📜 <strong>September 1st, 2025:</strong> 1.30 pm</li>
                         <li className="mb-4 simonetta-black text-2xl">💒 <strong>Reception:</strong> Tenuta Visconti (Pisticci, MT).</li>
                         <li className="mb-4 simonetta-black text-2xl">🚗 <strong>Mobility:</strong> A shuttle service will be provided to transport guests from Via G. Saragat, Matera to the venue. After the festivities, the same shuttle will ensure everyone returns safely to Matera.</li>
                     </ul>

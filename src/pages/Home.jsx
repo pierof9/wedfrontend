@@ -125,12 +125,6 @@ const Home = () => {
             <p className="poiret-one-regular text-2xl md:text-2xl text-gray-600 newBrown mb-6">
                 E' gradita gentile conferma
             </p>
-
-            <button
-                onClick={handleRSVPClick} 
-                className="mybtn poiret-one-regular px-6 py-3 border border-gray-500 text-gray-800 newBrown hover:bg-gray-100 rounded-lg transition-all duration-200">
-            CONFERMA LA TUA PRESENZA
-            </button>
         </div>
     </div>
 

@@ -237,7 +237,7 @@ const RSVP = () => {
             Grazie mille
           </h1>
           <p className="poiret-one-regular text-2xl text-gray-600 mb-6">
-            IBAN: 0000 0000 0000 0000
+            IBAN: IT92 V076 0103 2000 0107 3727 602
           </p>
         </div>
       </div>
